@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.quadrado {
+    height: 100px;
+    width: 24%;
+    float: left;
+    border-width: 1px;
+    border-style: solid;
+}

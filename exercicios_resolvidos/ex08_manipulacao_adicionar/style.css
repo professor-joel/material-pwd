@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#container{
+    margin: 15px;
+}
+
+.quadrado {
+    height: 100px;
+    width: 24%;
+    float: left;
+    border-width: 1px;
+    border-style: solid;
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#box{
+    width: 200px;
+    height: 200px;
+    border: solid 1px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+p{
+    text-align: center;
+}

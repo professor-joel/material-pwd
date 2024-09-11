@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Formulários</title>
+    <style>
+        /*configuração da mensagem de erro*/
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Validação</h1>
+    <form id="meuFormulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <span id="erroNome" class="error"></span><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+        <span id="erroEmail" class="error"></span><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+        <span id="erroIdade" class="error"></span><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

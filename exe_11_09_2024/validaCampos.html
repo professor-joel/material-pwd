@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Campos</title>
+    <style>
+        /*configuração da mensagem de erro*/
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Validação de Campos</h1>
+    <form id="formValidacao">
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" name="username">
+        <span id="erroUsername" class="error"></span><br><br>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password">
+        <span id="erroPassword" class="error"></span><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="valida.js"></script>
+</body>
+</html>

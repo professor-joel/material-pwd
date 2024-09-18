@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agenda.css">
+    <title>Cadastro de Telefones</title>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Cadastro de Telefones</h2>
+    <form id="phoneForm">
+        <label for="contactName">Nome:</label>
+        <input type="text" id="contactName" name="contactName" placeholder="Nome" required>
+
+        <label for="contactPhone">Número de Telefone:</label>
+        <input type="text" id="contactPhone" name="contactPhone" placeholder="Telefone" required>
+
+        <label for="contactEmail">Email:</label>
+        <input type="email" id="contactEmail" name="contactEmail" placeholder="Email" required>
+
+        <button type="submit">Adicionar</button>
+    </form>
+    <h3>Contatos Cadastrados:</h3>
+    <ul id="contactList"></ul>
+</div>
+
+<script src="agenda.js"></script>
+
+</body>
+</html>

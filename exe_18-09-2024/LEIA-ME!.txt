@@ -1,0 +1,72 @@
+**FORMULARIO.JS**
+
+Desenvolver um formulário para cadastro de torcedores de times de futebol, validando as entradas e exibindo os dados cadastrados na página após o envio. O formulário deve conter campos obrigatórios, e o envio só será permitido se todos os requisitos forem atendidos.
+
+Requisitos:
+Campos do Formulário:
+
+Nome: Deve ser preenchido com pelo menos 3 caracteres.
+Idade: Deve ser um número inteiro e o usuário deve ser maior de 18 anos.
+Time do Coração: O nome do time de futebol favorito do usuário.
+Foto do Time: O usuário deve enviar uma imagem representando o time de coração.
+Validações:
+
+O nome deve ter, no mínimo, 3 caracteres.
+A idade deve ser de 18 anos ou mais.
+Todos os campos são obrigatórios.
+Exibição de Mensagens:
+
+Exibir uma mensagem de erro em vermelho se as validações não forem atendidas.
+Exibir uma mensagem de sucesso se o formulário for enviado corretamente.
+
+_________________________________________________________________
+**AGENDA.JS**
+Desenvolver a lógica JavaScript para permitir que o usuário cadastre contatos (nome, número de telefone e email) por meio de um formulário, e exiba esses dados na mesma página após o cadastro. O foco será em manipular o DOM para capturar os dados do formulário, validá-los, e exibi-los dinamicamente.
+
+Requisitos:
+Captura dos Dados do Formulário:
+
+Ao submeter o formulário, o JavaScript deve capturar os seguintes campos:
+Nome do Contato: Capturado do campo de texto.
+Número de Telefone: Capturado do campo de texto.
+Email do Contato: Capturado do campo de email.
+Todos os campos devem ser obrigatórios.
+Exibição dos Contatos Cadastrados:
+
+Após o preenchimento correto e o envio do formulário, os dados do contato (nome, telefone e email) devem ser exibidos em uma lista não ordenada (<ul>) na página, abaixo do formulário.
+Cada novo contato deve ser adicionado à lista sem substituir os anteriores.
+Limpeza do Formulário:
+
+Após o envio bem-sucedido do formulário, todos os campos devem ser limpos para que o usuário possa cadastrar novos contatos sem ter que apagar manualmente os dados anteriores.
+Validações:
+
+Certifique-se de que os campos de nome, telefone e email estão preenchidos antes de permitir o cadastro.
+Se algum campo estiver vazio, o formulário não deve ser enviado, e o foco deve retornar ao campo incompleto.
+Interatividade com o DOM:
+
+Use eventos de formulário (como submit) e manipulação de elementos do DOM para capturar os dados e inseri-los na lista.
+Cada contato deve ser exibido em um novo item de lista (<li>) com o formato: Nome: [nome], Telefone: [telefone], Email: [email].
+Instruções:
+Crie o Arquivo agenda.js:
+
+No arquivo agenda.js, adicione o código JavaScript necessário para capturar os dados do formulário e manipulá-los de acordo com os requisitos.
+Captura e Exibição dos Dados:
+
+Use document.getElementById() para acessar os valores dos campos.
+Utilize o evento submit para interceptar o envio do formulário e evitar o comportamento padrão (recarregar a página).
+Adicione dinamicamente os dados capturados à lista de contatos (<ul id="listaContato">) usando document.createElement() para criar novos elementos <li>.
+Limpeza do Formulário:
+
+Após exibir os dados na lista, use form.reset() para limpar os campos de entrada.
+Validações:
+
+Antes de adicionar os dados à lista, certifique-se de que nenhum dos campos está vazio. Se algum campo estiver vazio, mostre uma mensagem de erro ou destaque o campo incompleto.
+Critérios de Avaliação:
+O cadastro deve funcionar corretamente, exibindo os dados dos contatos após o envio do formulário.
+Os campos do formulário devem ser limpos após cada envio.
+A lista de contatos cadastrados deve ser exibida corretamente na página.
+As validações devem impedir o envio de dados incompletos.
+Dicas:
+Utilize event.preventDefault() para impedir que o formulário recarregue a página ao ser enviado.
+Para adicionar um novo contato à lista, crie um novo item de lista (<li>) e anexe-o ao <ul id="listaContato">.
+Teste o formulário preenchendo diferentes combinações de nome, telefone e email para garantir que todos os dados sejam exibidos corretamente.
